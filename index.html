@@ -4,3 +4,12 @@
 <!--<script src='./comixngn.js'> </script>
 -->
 <script src='./comixngn.min.js' type='module'> </script>
+
+<!--
+BUGS TO FIX:
+* Linking an existing controller will not work as navigation binds are not set before buttonAssign is called
+* Calling new CmxBook will not create a controller because it will attempt to add CmxCtrl element via insertAdjacentElement, before the CmxBook itself is added to the DOM
+* closure-compiler fucks up class names: https://stackoverflow.com/a/12105424
+* include source map
+* include counter number
+-->
