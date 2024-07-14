@@ -345,6 +345,6 @@ export class CmxBook extends HTMLElement {
   ch_data(to?: number): Chapter|void{};
   setupShaders(options?: number): void{};
   resize(
-      sz?: {w?: number, h?: number, s2w?: boolean, s2h?: boolean}|0, redraw: boolean = true,
-      reset: boolean = false): void{};
+      sz?: {w?: number, h?: number, s2w?: boolean, s2h?: boolean, s2g?: boolean, s2l?: boolean}|0,
+      redraw: boolean = true, reset: boolean = false): void{};
 }
